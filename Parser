@@ -14,7 +14,7 @@
         }
     }
 
-    $fp = fopen('counter.txt', 'w+');
+    $fp = fopen('result.txt', 'w+');
     $html = file_get_contents('https://www.italska8.cz/byty');
     $document = phpQuery::newDocument($html);
     $mytext=$document->find('.clickable-row');
